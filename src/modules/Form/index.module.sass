@@ -3,7 +3,7 @@
   margin: 0 auto
   display: flex
   flex-direction: column
-  input, select
+  input
     width: 100%
     outline: none
     border: 2px solid #e1e5ee
@@ -12,58 +12,20 @@
     padding: 10px
     background: none
   select
-    color: white
-    background: #060b23
-  button
-    padding: 5px 0
-  .formInputWrap
-    margin-bottom: 15px
-    position: relative
-    input
-      &:hover
-        border-color: #adffff
-      &:focus
-        border-color: #18ffff
-        ~ .inputLabel
-          top: -10px
-          font-size: 14px
-      &:not(:placeholder-shown) ~ .inputLabel
-        top: -10px
-        font-size: 14px
-
-  .inputLabel
-    color: white
-    pointer-events: none
-    position: absolute
-    left: 16px
-    padding: 0 5px
-    top: 11px
-    background-color: #060b23
-    transition: .2s ease all
-.error
-  margin: 5px 0 0 0
-  color: #fc3535
-
-.form
-  width: min(400px, 100%)
-  margin: 0 auto
-  display: flex
-  flex-direction: column
-  input, select
     width: 100%
-    outline: none
     border: 2px solid #e1e5ee
     border-radius: 0.5rem
-    color: white
     padding: 10px
     background: none
-  select
+    color: white
+  select > option
     color: white
     background: #060b23
   button
     padding: 10px 0
     border: none
     font-weight: 600
+    border-radius: 0.5rem
     &:hover
       background-color: #adffff
   .formInputWrap
